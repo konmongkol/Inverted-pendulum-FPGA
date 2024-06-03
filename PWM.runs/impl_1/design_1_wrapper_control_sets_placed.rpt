@@ -1,0 +1,86 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2.1 (win64) Build 4081461 Thu Dec 14 12:24:51 MST 2023
+| Date         : Thu May 30 13:25:32 2024
+| Host         : LAPTOP-JD2KRH5I running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
+| Design       : design_1_wrapper
+| Device       : xc7z007s
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |     8 |
+|    Minimum number of control sets                        |     8 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    11 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |     8 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     2 |
+| >= 16              |     3 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               8 |            5 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              15 |            5 |
+| Yes          | No                    | No                     |             100 |           30 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              10 |            5 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------------+----------------------------------------+-------------------------------------+------------------+----------------+--------------+
+|                   Clock Signal                  |              Enable Signal             |           Set/Reset Signal          | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------------------------------------+----------------------------------------+-------------------------------------+------------------+----------------+--------------+
+|  design_1_i/processing_system7_0/inst/FCLK_CLK0 | design_1_i/pwm_0/U0/p_2_in             | design_1_i/pwm_0/U0/p_1_in[4]       |                2 |              4 |         2.00 |
+|  design_1_i/processing_system7_0/inst/FCLK_CLK0 | design_1_i/pwm_0/U0/duty[9]_i_2_n_0    | design_1_i/pwm_0/U0/p_1_in[9]       |                3 |              6 |         2.00 |
+|  design_1_i/processing_system7_0/inst/FCLK_CLK0 |                                        |                                     |                5 |              8 |         1.60 |
+|  design_1_i/processing_system7_0/inst/FCLK_CLK0 |                                        | design_1_i/pwm_0/U0/pwm_reg_i_1_n_0 |                5 |             15 |         3.00 |
+|  design_1_i/processing_system7_0/inst/FCLK_CLK0 | design_1_i/pwm_0/U0/duty_1[14]_i_1_n_0 |                                     |                4 |             15 |         3.75 |
+|  design_1_i/processing_system7_0/inst/FCLK_CLK0 | design_1_i/pwm_0/U0/x2                 |                                     |                6 |             23 |         3.83 |
+|  design_1_i/processing_system7_0/inst/FCLK_CLK0 | design_1_i/pwm_0/U0/CEA2               |                                     |                7 |             23 |         3.29 |
+|  design_1_i/processing_system7_0/inst/FCLK_CLK0 | design_1_i/pwm_0/U0/CT[1]              |                                     |               13 |             39 |         3.00 |
++-------------------------------------------------+----------------------------------------+-------------------------------------+------------------+----------------+--------------+
+
+

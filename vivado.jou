@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.1 (64-bit)
+# SW Build 4081461 on Thu Dec 14 12:24:51 MST 2023
+# IP Build 4080415 on Thu Dec 14 21:01:57 MST 2023
+# SharedData Build 4077621 on Mon Dec 11 00:23:44 MST 2023
+# Start of session at: Mon Jun  3 17:26:17 2024
+# Process ID: 24316
+# Current directory: C:/Users/ASUS/Desktop/FPGA/F_pid/PWM/PWM/Inverted-pendulum-FPGA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28312 C:\Users\ASUS\Desktop\FPGA\F_pid\PWM\PWM\Inverted-pendulum-FPGA\PWM.xpr
+# Log file: C:/Users/ASUS/Desktop/FPGA/F_pid/PWM/PWM/Inverted-pendulum-FPGA/vivado.log
+# Journal file: C:/Users/ASUS/Desktop/FPGA/F_pid/PWM/PWM/Inverted-pendulum-FPGA\vivado.jou
+# Running On: LAPTOP-JD2KRH5I, OS: Windows, CPU Frequency: 2994 MHz, CPU Physical cores: 24, Host memory: 16334 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ASUS/Desktop/FPGA/F_pid/PWM/PWM/Inverted-pendulum-FPGA/PWM.xpr
+update_compile_order -fileset sources_1
